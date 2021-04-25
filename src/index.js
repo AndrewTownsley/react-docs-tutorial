@@ -5,6 +5,13 @@ import './index.css';
 const { render } = require("@testing-library/react");
 
 class Square extends React.Component {
+  consructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    } 
+  }
+  
   render() {
     return (
       <button className="square" onClick={() => alert('click')}>
